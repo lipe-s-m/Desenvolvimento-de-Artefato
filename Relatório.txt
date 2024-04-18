@@ -1,9 +1,22 @@
 -----------------------------------------------------------------------------------------------------------------------
-        // Sobre o Formulário
+
+        // Sobre o Formulário (11/04)
  * sistema estar integrado com o sigaa, evitar mostrar o número qnd for entrar  ( ??? )  (dificil de acontecer)
-        - Usar email institucional usando API do google
+        - Usar email institucional usando API do google (Melhor forma)
+        {
+            começa fazendo o login pelo google - email institucional usando API do google
+                se foi autenticado com sucesso:
+                {
+                    redireciona p completar seu cadastro (SO NA 1 VEZ)   -   ai ele coloca o celular dele;
+                }
+
+                se Nao
+                {
+                    nada acontece
+                }
+        }
     
- * ticket digital // perguntar o que acontece com o dinheiro dos tickets // cond p fazer pix (tem q conversar com a direção)c ( boa demanda, porem dificil )
+ * ticket digital // perguntar o que acontece com o dinheiro dos tickets // cond p fazer pix (tem q conversar com a direção) // ( boa demanda, porem dificil )
 
  * como fazer pra ninguem burlar o sistema e pegar senha estando fora da rural? ( so acessa o sistema se tiver la. Filtro por endereço IP ) RESOLVIDO
 
@@ -11,70 +24,4 @@
  * Sobre as marmitas    -   INTERESSANTE MAS CUIDADO
 
 
-        // Duvidas Nossas
-
- * quanto tempo as pessoas demoram comendo?
-
-        // Regras de Negócio
- * sistema será dirigido por uma pessoa, seguindo o modelo atual, ele chamará os blocos de 5 pessoas ou individual;
- * o aviso por SMS ocorrerá: 20 numeros antes, 10 antes, 5 antes e um antes dando um aviso com um tempo para você já se preparar, com uma tolerância de atraso de 3 min
-
-
-
-
-   ------------   Projeto do Sistema   ------------
-
-lotacao maxima de pessoas: vamos supor que seja 50 (chamarei de MAX), logo, MAX = 50
-comeca com 0 pessoas dentro do RU, DENTRO = 0
-ficam 2 pessoas monitorando, uma na entrada (monitor1) e uma na saida (monitor2)
-
-se monitor1 sinalizar que alguem entrou no RU, DENTRO++;
-se monitor2 sinalizar que alguem saiu do RU, DENTRO--;
-Se o numero passar mais de meia hora sem ser sinalizado que saiu do RU: DENTRO--;
-
-
-ENQUANTO(DENTRO <= MAX-5)
-{
-    // o sistema chama automaticamente de 5 em 5 a cada 3 minutos, desde que haja lugar disponivel la dentro;
-    {
-        chama 1 2 3 4 5;
-            * 3 minutos *
-        chama 6 7 8 9 10
-    }
-
-    // a cada numero que entra, o monitor1 deve sinalizar que aquele numero ja entrou, ex:
-    {
-        chama 1 2 3 4 5;
-        entra 1 = monitor1 sinaliza que o 1 entrou  /  DENTRO++
-        entra 2 = monitor1 sinaliza que o 2 entrou  /  DENTRO++ 
-        conforme o monitor1 for sinalizando, DENTRO++;
-    }
-
-    // quando o monitor1 sinalizar que um numero entrou, o proximo deverá ser chamado
-    {
-        chama 1 2 3 4 5;
-        entra 1 = monitor1 sinaliza que o 1 entrou
-        chama 6
-        entra 2 = monitor1 sinaliza que o 2 entrou
-        chama 7...
-    }
-
-    // ao passar 3 minutos, chama os proximos 5 numeros
-    {
         
-        chama 1 2 3 4 5;
-        entra 1 = monitor1 sinaliza que o 1 entrou
-        chama 6
-        entra 2 = monitor1 sinaliza que o 2 entrou
-        chama 7...
-        
-        * 3 minutos *
-        
-        chama 8 9 10 11 12
-        entra 8 = monitor1 sinaliza que o 8 entrou
-        chama 13...
-    }
-}
-
-
-
