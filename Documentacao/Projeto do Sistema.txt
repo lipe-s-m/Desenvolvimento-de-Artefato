@@ -5,7 +5,7 @@
  * o aviso por SMS ocorrerá: 20 numeros antes, 10 antes, 5 antes e um antes dando um aviso com um tempo para você já se preparar, com uma tolerância de atraso de 3 min
 
 
-------------   Projeto do Sistema (17/04/24)  ------------
+------------   Projeto do Sistema (15/04/24)  ------------
 
 lotacao maxima de pessoas: vamos supor que seja 50 (chamarei de MAX), logo, MAX = 50
 comeca com 0 pessoas dentro do RU, DENTRO = 0
@@ -44,7 +44,6 @@ ENQUANTO(DENTRO <= MAX-5)
 
     // ao passar 3 minutos, chama os proximos 5 numeros
     {
-        
         chama 1 2 3 4 5;
         entra 1 = monitor1 sinaliza que o 1 entrou
         chama 6

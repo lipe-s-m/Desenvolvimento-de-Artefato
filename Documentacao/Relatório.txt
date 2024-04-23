@@ -23,5 +23,10 @@
  * Sobre o Cardápio   -   RESOLVIDO
  * Sobre as marmitas    -   INTERESSANTE MAS CUIDADO
 
+-----------------------------------------------------------------------------------------------------------------------
+        // Sobre o Sistema (18/04)
 
-        
+ * Controlar o fluxo, talvez com a catraca?
+ * Fazer uma simulação   -   NetLogo
+ * Fazer uma coisa de cada vez
+ * Usar o flask?

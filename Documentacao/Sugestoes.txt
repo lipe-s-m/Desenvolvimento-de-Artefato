@@ -1,0 +1,22 @@
+-----------------------------------------------------------------------------------------------------------------------
+        // Sugestoes importantes
+    Sugestoes dadas pelo Prof. Fellipe Duarte (12/04/24)
+    {
+         * Criar uma Moeda Social para o RU (Não é o foco)
+    }
+
+-----------------------------------------------------------------------------------------------------------------------
+
+    
+     Sugestoes dadas pelo Prof. Marcel (18/04/24)
+    {
+         * Criar uma Maquina Virtual
+         * Framework Flask
+         * SQLite
+         * O CHAT GPT PODE FAZER KKKKK
+         
+
+         A CATRACACA
+    }
+
+-----------------------------------------------------------------------------------------------------------------------
