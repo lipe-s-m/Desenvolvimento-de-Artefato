@@ -1,0 +1,160 @@
+* 
+{
+    padding:0;
+    margin:0;
+    
+
+}
+#icon
+{
+    width: 150px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.Login
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 800px;
+    width: 500px;
+    background-color: #E8E8E8;
+
+    border-radius: 30px;
+
+   
+}
+#signInDiv
+{
+    width: 300px;
+    height: 200px;
+    
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+#Login 
+{
+    font-family: 'Montserrat';
+    font-size: 62px;
+    font-weight: bold;
+    display: flex;
+    position: relative;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);    justify-content: center;
+    padding-bottom: 15px;
+    
+}
+
+#Desconect
+{
+    width: 300px;
+    height: 100px;
+    position: relative;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:1;
+
+
+}
+#errorIcon
+{
+    top: 10%;
+}
+.loginResponse
+{
+
+    width: 600px;
+    height: 500px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    
+    flex-flow: row wrap;
+
+}
+
+
+.loginResponse img
+{
+    padding: 30px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+.loginResponse h1
+{
+    font-size: 58px;
+    display: block;
+    height: auto;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.S9gUrf-YoZ4jf
+{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*
+
+#ImgUsuario
+{
+    width: 130px;
+}
+
+
+#signInDiv
+{
+    width: 300px;
+    height: 200px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    border-radius: 18px;
+    border: 8px #111 solid;
+}
+
+.Login
+{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    width: 300px;
+    height:200px;
+
+    border-radius: 15px;
+    background-color: antiquewhite;
+} */

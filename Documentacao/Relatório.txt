@@ -29,4 +29,10 @@
  * Controlar o fluxo, talvez com a catraca?
  * Fazer uma simulação   -   NetLogo
  * Fazer uma coisa de cada vez
- * Usar o flask?
+ * Usar o flask? {NAO, USAMOS REACT}
+
+ -----------------------------------------------------------------------------------------------------------------------
+        // Sobre o Sistema (25/04)
+
+ * Ver o Cardapio, e como sera implementado isso
+ * Testar
