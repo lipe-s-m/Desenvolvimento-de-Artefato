@@ -57,24 +57,30 @@
     width: 300px;
     height: 100px;
     position: relative;
-    top: 70%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index:1;
-
-
 }
-#errorIcon
+#limparEmail
 {
-    top: 10%;
+    width: 300px;
+    height: 100px;
+    position: relative;
+    top: 80%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index:1;
 }
+ 
+
 .loginResponse
 {
 
     width: 600px;
     height: 500px;
     
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -89,28 +95,43 @@
 }
 
 
-.loginResponse img
+.saudacao img
 {
-    padding: 30px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     width: 200px;
     height: 200px;
-
-    margin-top: 25px;
-    margin-bottom: 25px;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    top: 20%;   
 
 }
-.loginResponse h1
+
+#userPic
 {
-    font-size: 58px;
-    display: block;
-    height: auto;
-    width: auto;
-    margin-top: 20px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    margin-left: 20px;
     margin-bottom: 20px;
+    top: -130%;   
+    left: 27%;
+
+}
+.saudacao
+{
+    font-family: 'Montserrat';
+    font-size: 56px;
+    font-weight: bold;
+    width: 500px;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    justify-content: center;
+    padding-bottom: 15px;
+    
 
 }
 
