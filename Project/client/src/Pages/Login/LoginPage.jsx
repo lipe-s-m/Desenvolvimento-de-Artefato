@@ -47,6 +47,12 @@ function Login() {
     document.getElementById("signInDiv").hidden = false;
   }
 
+  //usuario logado com sucesso, prosseguir pra proxima pagina
+  function nextPage(event)
+  {
+    console.log("ir pra proxima pagina, %s", user.name);
+  }
+
   useEffect(() => {
     /* global google */
     google.accounts.id.initialize({
@@ -71,47 +77,47 @@ function Login() {
         <div id="Login">
           {Object.keys(user).length === 0 && (
             <h3>
-              <img id="icon" src={Icon} alt="Icon"></img> <br></br> Login
+              <img id="icon" src={Icon} alt="Icon"></img> <br></br> <div className="title">Login</div>
             </h3>
           )}
         </div>
 
-        {/* carrega o botao */}
+        {/* carrega o botao de login google*/}
         <div id="signInDiv"></div>
         {/* Botao de Log Out */}
         {Object.keys(user).length !== 0 && user.hd === "ufrrj.br" && (
           <button id="Desconect" onClick={(e) => handleSignOut(e)}>
-            Desconectar sua Conta
+            DESCONECTAR
           </button>
         )}
         {/* Email nao é da UFRRJ */}
         {Object.keys(user).length !== 0 && user.hd !== "ufrrj.br" && (
           <div className="loginResponse">
-            <div className="saudacao">
+            <div className="loginNegado">
               <img src={erro} alt="erroImage"></img> <br></br>
               Este Email não pertence à UFRRJ
             </div>
 
             <button id="limparEmail" onClick={(e) => handleSignOut(e)}>
-              Tentar Novamente
+              VOLTAR
             </button>
-            {console.log("chegou aq")}
           </div>
         )}
 
         {/* Usuario logado com sucesso */}
-
         {Object.keys(user).length !== 0 && user.hd === "ufrrj.br" && (
           <div className="loginResponse">
             <div className="saudacao">
               <img id="userPic" src={user.picture} alt="PicImage"></img>{" "}
               <br></br>
-              Ola, {user.hd}!
+              Ola, {user.name}!
             </div>
+              <button id="prosseguir" onClick={(e) => nextPage(e)}>
+              PROSSEGUIR
+            </button>
           </div>
         )}
-
-        {console.log("%s", user.email)}
+      <p className="lowText">Desenvolvido por<div className="bold">: Alunos de C.COMP</div></p>
       </div>
     </>
   );
