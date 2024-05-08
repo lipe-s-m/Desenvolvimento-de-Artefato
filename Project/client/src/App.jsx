@@ -1,5 +1,4 @@
-import Login from "./Pages/Login/LoginPage";
-import Home from "./Pages/Home/Home";
+import AppRoutes from "./Routes/routes";
 
 function App() {
   const usuarioLogadoString = localStorage.getItem("_usuario_logado");
@@ -12,8 +11,9 @@ function App() {
   return (
     <>
       {/* <h1>App diz: ola, {usuarioLogado.name}, bem vindo!</h1> */}
-      <Login />
-      <Home />
+      <AppRoutes/>
+
+      {/* <Home /> */}
     </>
   );
 }

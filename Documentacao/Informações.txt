@@ -15,5 +15,13 @@
 
 -----------------------------------------------------------------------------------------------------------------------
 
+-----------------------------------------------------------------------------------------------------------------------
+        // Sobre o Sistema   -   Marcel (02/05)
+
+ * Protocolo HTTP
+ * https://pythonhosted.org/Flask-Mail/   (enviar email)
+ * SQL alchemy ( nn devo usar )
+ * Marcel ta nafaculdade terça, sexta e talvez segunda / quarta
+
     
      

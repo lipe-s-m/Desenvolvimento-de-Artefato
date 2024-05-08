@@ -3,6 +3,7 @@ import { jwtDecode } from "jwt-decode";
 import "./LoginPage.css";
 import Icon from "../../UI/Icons/1144760.png";
 import erro from "../../UI/Icons/erro.png";
+import { Link } from "react-router-dom";
 
 function Login() {
   //obtendo dados do usuario
@@ -112,12 +113,12 @@ function Login() {
               <br></br>
               Ola, {user.name}!
             </div>
-              <button id="prosseguir" onClick={(e) => nextPage(e)}>
+            <Link to = "/Register"><button id="prosseguirLog" onClick={(e) => nextPage(e)}>
               PROSSEGUIR
-            </button>
+            </button></Link>
           </div>
         )}
-      <p className="lowText">Desenvolvido por<div className="bold">: Alunos de C.COMP</div></p>
+      <p className="lowText">Desenvolvido por<strong className="bold">: Alunos de C.COMP</strong></p>
       </div>
     </>
   );

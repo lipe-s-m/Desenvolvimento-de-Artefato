@@ -36,3 +36,12 @@
 
  * Ver o Cardapio, e como sera implementado isso
  * Testar
+
+
+  -----------------------------------------------------------------------------------------------------------------------
+        // Sobre o Sistema (02/05)
+
+ * Fila é o objetivo principal
+ * Fila Atual em Arquivo
+ * Tabela pra Historico de Eventos
+ * Sistema Separado pra administração, pra fazermos o Cardapio - OK
