@@ -1,4 +1,5 @@
 import AppRoutes from "./Routes/routes";
+import "./App.css";
 
 function App() {
   const usuarioLogadoString = localStorage.getItem("_usuario_logado");

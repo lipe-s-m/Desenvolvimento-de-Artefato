@@ -60,6 +60,8 @@
   background-color: #1a4d2e;
   border-radius: 30px;
   z-index: 1;
+  cursor: pointer;
+
 }
 #limparEmail {
   font-size: 28px;
@@ -75,6 +77,8 @@
   background-color: #1a4d2e;
   border-radius: 30px;
   z-index: 1;
+  cursor: pointer;
+
 }
 #prosseguirLog {
   font-size: 28px;
@@ -83,14 +87,15 @@
   color: #e8e8e8;
   width: 330px;
   height: 70px;
-  position: relative;
+  position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
   background-color: #1a4d2e;
   border-radius: 30px;
-  
+  cursor: pointer;
+
 }
 #prosseguirLog:hover,
 #limparEmail:hover,

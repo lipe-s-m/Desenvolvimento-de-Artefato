@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { jwtDecode } from "jwt-decode";
 import "./LoginPage.css";
+
 import Icon from "../../UI/Icons/1144760.png";
 import erro from "../../UI/Icons/erro.png";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 function Login() {
   //obtendo dados do usuario
@@ -15,6 +17,7 @@ function Login() {
 
     //traduzir as informações pelo id com o decode
     var userObject = jwtDecode(response.credential);
+   
 
     console.log(userObject);
 
@@ -37,6 +40,7 @@ function Login() {
     //Guardar info do usuario
     localStorage.setItem("_usuario_logado", JSON.stringify(userObject));
     console.log(userObject.name);
+    
   }
 
   //funcao de logout
@@ -47,11 +51,13 @@ function Login() {
     //reaparecer botao
     document.getElementById("signInDiv").hidden = false;
   }
-
+  const navigate = useNavigate();
   //usuario logado com sucesso, prosseguir pra proxima pagina
-  function nextPage(event)
+  function nextPage(event) 
   {
-    console.log("ir pra proxima pagina, %s", user.name);
+    const nomeUsuario = user.name
+    console.log("ir para próxima página, %s", nomeUsuario);
+    navigate(`/AgendarHorario/${nomeUsuario}`); 
   }
 
   useEffect(() => {
@@ -70,6 +76,7 @@ function Login() {
       size: "large",
     });
   }, []);
+  
 
   return (
     <>
@@ -113,9 +120,10 @@ function Login() {
               <br></br>
               Ola, {user.name}!
             </div>
-            <Link to = "/Register"><button id="prosseguirLog" onClick={(e) => nextPage(e)}>
+            
+            <button id="prosseguirLog" onClick={(e) => nextPage(e)}>
               PROSSEGUIR
-            </button></Link>
+            </button>
           </div>
         )}
       <p className="lowText">Desenvolvido por<strong className="bold">: Alunos de C.COMP</strong></p>
