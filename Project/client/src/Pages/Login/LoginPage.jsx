@@ -6,7 +6,6 @@ import Icon from "../../UI/Icons/1144760.png";
 import erro from "../../UI/Icons/erro.png";
 import { useNavigate } from "react-router-dom";
 
-
 function Login() {
   //obtendo dados do usuario
   var [user, setUser] = useState({});
@@ -17,7 +16,6 @@ function Login() {
 
     //traduzir as informações pelo id com o decode
     var userObject = jwtDecode(response.credential);
-   
 
     console.log(userObject);
 
@@ -40,7 +38,6 @@ function Login() {
     //Guardar info do usuario
     localStorage.setItem("_usuario_logado", JSON.stringify(userObject));
     console.log(userObject.name);
-    
   }
 
   //funcao de logout
@@ -52,12 +49,16 @@ function Login() {
     document.getElementById("signInDiv").hidden = false;
   }
   const navigate = useNavigate();
+
   //usuario logado com sucesso, prosseguir pra proxima pagina
-  function nextPage(event) 
-  {
-    const nomeUsuario = user.name
+  function nextPage(event) {
+    //cria atributos com os valores do objeto
+    const nomeUsuario = user.name;
+    const emailUsuario = user.email;
     console.log("ir para próxima página, %s", nomeUsuario);
-    navigate(`/AgendarHorario/${nomeUsuario}`); 
+
+    //carrega pagina de agendamento
+    navigate(`/AgendarHorario/${nomeUsuario}/${emailUsuario}`);
   }
 
   useEffect(() => {
@@ -74,9 +75,13 @@ function Login() {
     google.accounts.id.renderButton(document.getElementById("signInDiv"), {
       theme: "outline",
       size: "large",
+      type: "standard",
+      shape: "pill",
+      text: "continue_with",
+      logo_alignment: "left",
+      width: "300",
     });
   }, []);
-  
 
   return (
     <>
@@ -85,7 +90,8 @@ function Login() {
         <div id="Login">
           {Object.keys(user).length === 0 && (
             <h3>
-              <img id="icon" src={Icon} alt="Icon"></img> <br></br> <div className="title">Login</div>
+              <img id="icon" src={Icon} alt="Icon"></img> <br></br>{" "}
+              <div className="title">Login</div>
             </h3>
           )}
         </div>
@@ -120,13 +126,15 @@ function Login() {
               <br></br>
               Ola, {user.name}!
             </div>
-            
+
             <button id="prosseguirLog" onClick={(e) => nextPage(e)}>
               PROSSEGUIR
             </button>
           </div>
         )}
-      <p className="lowText">Desenvolvido por<strong className="bold">: Alunos de C.COMP</strong></p>
+        <p className="lowText">
+          Desenvolvido por<strong className="bold">: Alunos de C.COMP</strong>
+        </p>
       </div>
     </>
   );

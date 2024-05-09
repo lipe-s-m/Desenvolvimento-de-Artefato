@@ -6,13 +6,11 @@ function App() {
   const usuarioLogado = JSON.parse(usuarioLogadoString);
   console.log(usuarioLogado);
 
-  
-
   //HTML ABAIXO
   return (
     <>
       {/* <h1>App diz: ola, {usuarioLogado.name}, bem vindo!</h1> */}
-      <AppRoutes/>
+      <AppRoutes />
 
       {/* <Home /> */}
     </>

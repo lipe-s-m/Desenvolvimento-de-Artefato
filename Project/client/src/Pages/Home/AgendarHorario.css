@@ -3,18 +3,7 @@
     margin: 0;
     
   }
-  
-  #iconReg {
-    width: 150px;
-    
-    
-    margin-bottom: 1px;
-  }
-  #reg
-  {
-    text-align: center;
-  }
-  .registro {
+  #registro {
     
     position: absolute;
     top: 50%;
@@ -27,31 +16,20 @@
   
     border-radius: 30px;
   }
-  #signInDiv {
-    width: 300px;
-    height: 200px;
-  
-    position: absolute;
-    top: 64%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  #registro {
-    
-    display: flex;
-    position: relative;
-    top: 22%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    justify-content: center;
-    padding-bottom: 15px;
-  }
-  .title{
-      font-family: "Montserrat";
+
+
+  #title{
+    font-family: "Montserrat";
     font-size: 62px;
     font-weight: bold;
+    width: 460px;
     opacity: 0.9;
+    position: absolute;
+    top: 5%; /* Posiciona o texto no final do quadrado */
+    left: 50%; /* Posiciona o texto no meio horizontalmente */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    margin: 0; /* Remove margens padrão */
+
   }
   
   #Desconect {
@@ -111,86 +89,24 @@
     color: rgba(28, 76, 46, 1);
   }
   
-  .loginResponse {
-    width: 600px;
-    height: 500px;
+ 
   
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  
-    display: flex;
-    text-align: center;
-    justify-content: center;
-  
-    flex-flow: row wrap;
-  }
-  
-  .saudacao img {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    align-items: center;
-    margin-left: 5px;
-    margin-bottom: 30px;
-    top: 20%;
-  }
-  
-  .saudacao {
+  #lowText {
     font-family: "Montserrat";
-    font-size: 42px;
-    font-weight: bold;
-    width: 500px;
-    position: absolute;
-    top: 9%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    justify-content: center;
-    padding-bottom: 15px;
-  }
-  
-  .loginNegado img {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    align-items: center;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    top: 20%;
-    left: -1.8%;
-  }
-  
-  .loginNegado {
-    font-family: "Montserrat";
-    font-size: 42px;
-    font-weight: bold;
-    width: 500px;
-    position: absolute;
-    top: 18%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    justify-content: center;
-    padding-bottom: 15px;
-  }
-  
-  .S9gUrf-YoZ4jf {
+    color: rgba(00, 00, 00, 0.7);
+    font-weight: normal;
+    height: 30px;
     width: 300px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .lowText {
-      font-family: "Montserrat";
-      color: rgba(00, 00, 00, 0.7);
-      font-weight: normal;
-      font-size: 17px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 63%;
+    font-size: 17px;
+    position: absolute;
+    bottom: 0; /* Posiciona o texto no final do quadrado */
+    left: 50%; /* Posiciona o texto no meio horizontalmente */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    margin: 0; /* Remove margens padrão */
+
+    padding: 10px; /* Adiciona um preenchimento para separar o texto das bordas do quadrado */
+
+    
   }
   .bold
   {

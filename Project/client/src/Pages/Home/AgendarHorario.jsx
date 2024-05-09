@@ -1,34 +1,31 @@
 import { useParams } from "react-router-dom";
+import "./AgendarHorario.css"
 
-function AgendarHorario(){
+function AgendarHorario() {
   //obtendo dados do usuario
 
-   
-    // //Guardar info do usuario
-    // localStorage.setItem("_usuario_logado", JSON.stringify(userObject));
-    // console.log(userObject.name);
-    const { nomeUsuario } = useParams();
-
-  
+  // //Guardar info do usuario
+  // localStorage.setItem("_usuario_logado", JSON.stringify(userObject));
+  // console.log(userObject.name);
+  const { nomeUsuario } = useParams();
+  const { emailUsuario } = useParams();
 
   return (
     <>
-      <div className="registro">
+      <div id="registro">
         {/* Se usuario nao tiver, logado, pede p conectar */}
-        <div id="registro">
-          
-            <h3 id="reg">
-              <div className="title">Agendar Horário, {nomeUsuario}</div>
-            </h3>
-          
+        <div>
+          <h3>
+            <div id="title">Agendar Horário</div>
+          </h3>
+
         </div>
-
-       
-
-
-        
-      <p className="lowText">Desenvolvido por<strong className="bold">: Alunos de C.COMP</strong></p>
+        <p id="lowText">
+          Desenvolvido por<strong className="bold">: Alunos de C.COMP</strong>
+        </p>
       </div>
+      {console.log("email: %s \n nome: %s", emailUsuario, nomeUsuario)};
+      
     </>
   );
 }

@@ -30,7 +30,6 @@
 }
 
 #Login {
-  
   display: flex;
   position: relative;
   top: 35%;
@@ -39,8 +38,8 @@
   justify-content: center;
   padding-bottom: 15px;
 }
-.title{
-    font-family: "Montserrat";
+.title {
+  font-family: "Montserrat";
   font-size: 62px;
   font-weight: bold;
   opacity: 0.9;
@@ -61,7 +60,6 @@
   border-radius: 30px;
   z-index: 1;
   cursor: pointer;
-
 }
 #limparEmail {
   font-size: 28px;
@@ -78,7 +76,6 @@
   border-radius: 30px;
   z-index: 1;
   cursor: pointer;
-
 }
 #prosseguirLog {
   font-size: 28px;
@@ -95,7 +92,6 @@
   background-color: #1a4d2e;
   border-radius: 30px;
   cursor: pointer;
-
 }
 #prosseguirLog:hover,
 #limparEmail:hover,
@@ -180,19 +176,17 @@
   justify-content: center;
 }
 .lowText {
-    font-family: "Montserrat";
-    color: rgba(00, 00, 00, 0.7);
-    font-weight: normal;
-    font-size: 17px;
+  font-family: "Montserrat";
+  color: rgba(00, 00, 00, 0.7);
+  font-weight: normal;
+  font-size: 17px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   top: 63%;
 }
-.bold
-{
-    font-weight: bold;
-    color: rgba(28, 76, 46, 0.7);
-
+.bold {
+  font-weight: bold;
+  color: rgba(28, 76, 46, 0.7);
 }
