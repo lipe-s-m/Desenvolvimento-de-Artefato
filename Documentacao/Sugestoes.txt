@@ -10,9 +10,9 @@
     
      Sugestoes dadas pelo Prof. Marcel (18/04/24)
     {
-         * Criar uma Maquina Virtual
-         * Framework Flask
-         * SQLite
+         * Criar uma Maquina Virtual 
+         * Framework Flask (nao usaremos)
+         * SQLite (nao usaremos)
          * O CHAT GPT PODE FAZER KKKKK
          
 
