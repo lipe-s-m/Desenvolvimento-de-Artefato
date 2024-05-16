@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { jwtDecode } from "jwt-decode";
 import "./LoginPage.css";
+import Axios from "axios";
 
 import Icon from "../../UI/Icons/1144760.png";
 import erro from "../../UI/Icons/erro.png";
@@ -57,6 +58,16 @@ function Login() {
     const emailUsuario = user.email;
     console.log("ir para próxima página, %s", nomeUsuario);
 
+
+    //cadastro provisorio
+    Axios.post("http://localhost:3001/register", {
+      email: emailUsuario,
+      name: nomeUsuario,
+    }).then((response) => {
+      console.log(response)
+    });
+  
+
     //carrega pagina de agendamento
     navigate(`/AgendarHorario/${nomeUsuario}/${emailUsuario}`);
   }
@@ -99,13 +110,13 @@ function Login() {
         {/* carrega o botao de login google*/}
         <div id="signInDiv"></div>
         {/* Botao de Log Out */}
-        {Object.keys(user).length !== 0 && user.hd === "ufrrj.br" && (
+        {Object.keys(user).length !== 0 && user.hd !== "ufrrj.br" && (
           <button id="Desconect" onClick={(e) => handleSignOut(e)}>
             DESCONECTAR
           </button>
         )}
         {/* Email nao é da UFRRJ */}
-        {Object.keys(user).length !== 0 && user.hd !== "ufrrj.br" && (
+        {Object.keys(user).length !== 0 && user.hd === "ufrrj.br" && (
           <div className="loginResponse">
             <div className="loginNegado">
               <img src={erro} alt="erroImage"></img> <br></br>
@@ -119,7 +130,7 @@ function Login() {
         )}
 
         {/* Usuario logado com sucesso */}
-        {Object.keys(user).length !== 0 && user.hd === "ufrrj.br" && (
+        {Object.keys(user).length !== 0 && user.hd !== "ufrrj.br" && (
           <div className="loginResponse">
             <div className="saudacao">
               <img id="userPic" src={user.picture} alt="PicImage"></img>{" "}

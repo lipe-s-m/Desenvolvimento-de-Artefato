@@ -120,6 +120,9 @@
     font-size: 40px;
     position: absolute;
     bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+
   }
 
   #lowText {

@@ -39,64 +39,65 @@ function AgendarHorario() {
   const handleIncreaseLotacaoBotao1 = () => {
     if (lotacaoBotao1 < 50) {
       setLotacaoBotao1((prevLotacao) => prevLotacao + 1);
-      console.log(lotacaoBotao1);
+      console.log(lotacaoBotao1+1);
+           
     }
   };
   // Manipula o aumento da lotação para o Botão 2
   const handleIncreaseLotacaoBotao2 = () => {
     if (lotacaoBotao2 < 50) {
       setLotacaoBotao2((prevLotacao) => prevLotacao + 1);
-      console.log(lotacaoBotao2);
+      console.log(lotacaoBotao2+1);
     }
   };
 
   const handleIncreaseLotacaoBotao3 = () => {
     if (lotacaoBotao3 < 50) {
       setLotacaoBotao3((prevLotacao) => prevLotacao + 1);
-      console.log(lotacaoBotao3);
+      console.log(lotacaoBotao3+1);
     }
   };
   const handleIncreaseLotacaoBotao4 = () => {
     if (lotacaoBotao4 < 50) {
       setLotacaoBotao4((prevLotacao) => prevLotacao + 1);
-      console.log(lotacaoBotao4);
+      console.log(lotacaoBotao4+1);
     }
   };
   const handleIncreaseLotacaoBotao5 = () => {
     if (lotacaoBotao5 < 50) {
       setLotacaoBotao5((prevLotacao) => prevLotacao + 1);
-      console.log(lotacaoBotao5);
+      console.log(lotacaoBotao5+1);
     }
   };
   const handleIncreaseLotacaoBotao6 = () => {
     if (lotacaoBotao6 < 50) {
       setLotacaoBotao6((prevLotacao) => prevLotacao + 1);
-      console.log(lotacaoBotao6);
+      console.log(lotacaoBotao6+1);
     }
   };
   const handleIncreaseLotacaoBotao7 = () => {
     if (lotacaoBotao7 < 50) {
       setLotacaoBotao7((prevLotacao) => prevLotacao + 1);
-      console.log(lotacaoBotao7);
+      console.log(lotacaoBotao7+1);
     }
   };
 
   const handleIncreaseLotacaoBotao8 = () => {
     if (lotacaoBotao8 < 50) {
       setLotacaoBotao8((prevLotacao) => prevLotacao + 1);
-      console.log(lotacaoBotao8);
+      console.log(lotacaoBotao8+1);
     }
   };
   const handleIncreaseLotacaoBotao9 = () => {
     if (lotacaoBotao9 < 50) {
       setLotacaoBotao9((prevLotacao) => prevLotacao + 1);
-      console.log(lotacaoBotao9);
+      console.log(lotacaoBotao9+1);
     }
   };
   const handleIncreaseLotacaoBotao10 = () => {
     if (lotacaoBotao10 < 50) {
       setLotacaoBotao10((prevLotacao) => prevLotacao + 1);
-      console.log(lotacaoBotao10);
+      console.log(lotacaoBotao10+1);
     }
   };
   return (
